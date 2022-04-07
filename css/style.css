@@ -1,3 +1,9 @@
+* {
+    margin: 0%;
+}
+a {
+    text-decoration: none;
+}
 li {
     list-style-type: none;
 }
@@ -8,12 +14,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: white;
+    background-color: rgb(8, 8, 8);
+    padding: 5%;
 }
 .nav-bar ul {
     display: flex;
     flex-direction: row;
 }
-
+.books {
+    padding: 4%;
+}
 .book-template {
     display: flex;
     flex-direction: row;
@@ -22,10 +33,12 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     padding: 2%;
+    box-shadow: 2px 2px 4px 5px black;
 }
 .book-data {
     display: flex;
     flex-direction: column;
+    margin-top: 4%;
 }
 .cover-image {
     width: 80%;
@@ -61,6 +74,7 @@ body {
 }
 .buttons button:hover {
     transition: 0.4s;
+    transform: scale(1.05);
     background-color: gray;
     box-shadow: 2px 2px 4px gray;
     border: 2px solid black;
@@ -68,13 +82,14 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: small;
+        font-size: xx-small;
     }
     .book-template {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 5%;
     }
     .book-data {
         text-align: center;
@@ -83,9 +98,10 @@ body {
        margin: 0%;
    }
    .download-btn, .read-btn {
-       font-size: smaller;
+       font-size: small;
    }
    .cover-image {
+     width: 100%;
      margin: 0%;
    }
 }
