@@ -1,0 +1,67 @@
+li {
+    list-style-type: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-template {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid black;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2%;
+}
+.bbok-data {
+    display: flex;
+    flex-direction: row;
+}
+.cover-image {
+    width: 80%;
+}
+.download-btn {
+    border: 2px solid red;
+    border-radius: 0.5em;
+    background-color: #29cc7c;
+    padding: .7em;
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0.5em;
+    margin-left: 0%;
+}
+.read-btn {
+    border: 2px solid gray;
+    border-radius: 0.5em;
+    background-color: #e61a23;
+    padding: .7em;
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0.5em;
+    margin-left: 0%;
+}
+.buttons {
+    margin: 10%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+.buttons button:hover {
+    transition: 0.4s;
+    background-color: gray;
+    box-shadow: 2px 2px 4px gray;
+    border: 2px solid black;
+}
