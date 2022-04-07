@@ -23,9 +23,9 @@ body {
     margin-right: 15%;
     padding: 2%;
 }
-.bbok-data {
+.book-data {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .cover-image {
     width: 80%;
@@ -64,4 +64,28 @@ body {
     background-color: gray;
     box-shadow: 2px 2px 4px gray;
     border: 2px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: small;
+    }
+    .book-template {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .book-data {
+        text-align: center;
+    }
+   .buttons {
+       margin: 0%;
+   }
+   .download-btn, .read-btn {
+       font-size: smaller;
+   }
+   .cover-image {
+     margin: 0%;
+   }
 }
